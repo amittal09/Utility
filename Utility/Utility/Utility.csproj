@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99E4E95F-7371-4F78-AE38-9F4AB1C7D5C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Utility</RootNamespace>
+    <AssemblyName>Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Age.cs" />
+    <Compile Include="Utilities\Bound.cs" />
+    <Compile Include="Utilities\ClassMapper.cs" />
+    <Compile Include="Utilities\ClassMapper_TFrom, TTo_.cs" />
+    <Compile Include="Utilities\Closed_T_.cs" />
+    <Compile Include="Utilities\Collections\Chain.cs" />
+    <Compile Include="Utilities\Collections\FrameworkRandomizer.cs" />
+    <Compile Include="Utilities\Collections\GenericDictionaryAdapter_TKey, TValue_.cs" />
+    <Compile Include="Utilities\Collections\IPaginatedCollection_out T_.cs" />
+    <Compile Include="Utilities\Collections\IPaginatedResults.cs" />
+    <Compile Include="Utilities\Collections\IRandomizer.cs" />
+    <Compile Include="Utilities\Collections\IReadOnlyList_T_.cs" />
+    <Compile Include="Utilities\Collections\KeyValueAdapter_TKey, TValue_.cs" />
+    <Compile Include="Utilities\Collections\NotifyingList_T_.cs" />
+    <Compile Include="Utilities\Collections\PaginatedCollection_T_.cs" />
+    <Compile Include="Utilities\Collections\PaginatedResults_T_.cs" />
+    <Compile Include="Utilities\Collections\Pagination.cs" />
+    <Compile Include="Utilities\Collections\Priority.cs" />
+    <Compile Include="Utilities\Collections\PriorityQueue_TPriorityEnum, TValue_.cs" />
+    <Compile Include="Utilities\Collections\ReadOnlyListAdapter_T_.cs" />
+    <Compile Include="Utilities\Collections\SmartEntry_T_.cs" />
+    <Compile Include="Utilities\Collections\SmartEnumerable_T_.cs" />
+    <Compile Include="Utilities\Collections\TreeNode_TModel_.cs" />
+    <Compile Include="Utilities\Collections\Tree_TItem, TModel, TKey_.cs" />
+    <Compile Include="Utilities\Collections\Tree_TModel, TKey_.cs" />
+    <Compile Include="Utilities\Comparisons\ChainableComparer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\ChainableEqualizer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\ChainableExtensions.cs" />
+    <Compile Include="Utilities\Comparisons\Cmp_T_.cs" />
+    <Compile Include="Utilities\Comparisons\ComparisonComparer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\DelegatedEqualizer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\Direction.cs" />
+    <Compile Include="Utilities\Comparisons\Eq_T_.cs" />
+    <Compile Include="Utilities\Comparisons\Hasher.cs" />
+    <Compile Include="Utilities\Comparisons\OperatorComparer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\ReversedComparer_T_.cs" />
+    <Compile Include="Utilities\Comparisons\SelectorComparer_T, K_.cs" />
+    <Compile Include="Utilities\Comparisons\SelectorEqualizer_T, K_.cs" />
+    <Compile Include="Utilities\Comparisons\StringRepresentationComparer_T_.cs" />
+    <Compile Include="Utilities\Configuration\CollectionCountValidator.cs" />
+    <Compile Include="Utilities\Configuration\CollectionCountValidatorAttribute.cs" />
+    <Compile Include="Utilities\Configuration\ConfigurationElementCollection_TKey, TValue_.cs" />
+    <Compile Include="Utilities\ConsoleFormatter.cs" />
+    <Compile Include="Utilities\DecimalPercentage.cs" />
+    <Compile Include="Utilities\DirectoryServices\AdEntryMethod.cs" />
+    <Compile Include="Utilities\DirectoryServices\AdObjectCategory.cs" />
+    <Compile Include="Utilities\DirectoryServices\AdProperty.cs" />
+    <Compile Include="Utilities\DirectoryServices\DirectoryEntryCollection.cs" />
+    <Compile Include="Utilities\DirectoryServices\DirectoryEntryExtensions.cs" />
+    <Compile Include="Utilities\DirectoryServices\DirectorySearcherExtensions.cs" />
+    <Compile Include="Utilities\DirectoryServices\EnumExtensions.cs" />
+    <Compile Include="Utilities\DisposableAction.cs" />
+    <Compile Include="Utilities\DomainOf.cs" />
+    <Compile Include="Utilities\DomainOfValues_T_.cs" />
+    <Compile Include="Utilities\EnumeratedRepository_T_.cs" />
+    <Compile Include="Utilities\Enumerated_T_.cs" />
+    <Compile Include="Utilities\Enumeration.cs" />
+    <Compile Include="Utilities\Eventing\Args.cs" />
+    <Compile Include="Utilities\Eventing\CancelEventArgs.cs" />
+    <Compile Include="Utilities\Eventing\ChainedEventArgs.cs" />
+    <Compile Include="Utilities\Eventing\ChainedEventHandler_in T, out K_.cs" />
+    <Compile Include="Utilities\Eventing\ChainedEventHandler_in T_.cs" />
+    <Compile Include="Utilities\Eventing\EventHandler_in TEventArgs, in TSender_.cs" />
+    <Compile Include="Utilities\Eventing\EventHelper.cs" />
+    <Compile Include="Utilities\Eventing\ICancelEventArgs.cs" />
+    <Compile Include="Utilities\Eventing\IChainedEventArgs.cs" />
+    <Compile Include="Utilities\Eventing\IIndexEventArgs.cs" />
+    <Compile Include="Utilities\Eventing\IMutableValueEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\INewValueEventArgs_out T_.cs" />
+    <Compile Include="Utilities\Eventing\IOldValueEventArgs_out T_.cs" />
+    <Compile Include="Utilities\Eventing\IValueEventArgs_out T_.cs" />
+    <Compile Include="Utilities\Eventing\MultiEventArgs_T, U_.cs" />
+    <Compile Include="Utilities\Eventing\MutableValueEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\PropertyValueChangedEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\PropertyValueChangingEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueCancelEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueChangedEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueChangingEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueIndexCancelEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueIndexChangedEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueIndexChangingEventArgs_T_.cs" />
+    <Compile Include="Utilities\Eventing\ValueIndexEventArgs_T_.cs" />
+    <Compile Include="Utilities\ExceptionHelper.cs" />
+    <Compile Include="Utilities\Extensions.AnonymousExt\AnonymousExtensions.cs" />
+    <Compile Include="Utilities\Extensions.AttributeExt\AttributeExtensions.cs" />
+    <Compile Include="Utilities\Extensions.ComparableExt\ComparableExtensions.cs" />
+    <Compile Include="Utilities\Extensions.ControlExt\ControlExtensions.cs" />
+    <Compile Include="Utilities\Extensions.DataExt\DbCommandExtensions.cs" />
+    <Compile Include="Utilities\Extensions.DataExt\IAddParamStrategy.cs" />
+    <Compile Include="Utilities\Extensions.DelegateExt\DelegateExtensions.cs" />
+    <Compile Include="Utilities\Extensions.DomainExt\DomainOfValuesExtensions.cs" />
+    <Compile Include="Utilities\Extensions.EnumerableExt\EnumerableExtensions.cs" />
+    <Compile Include="Utilities\Extensions.Infrastructure\CastExtensionPoint_T_.cs" />
+    <Compile Include="Utilities\Extensions.Infrastructure\EntryPoints.cs" />
+    <Compile Include="Utilities\Extensions.Infrastructure\ExtensionPoint_T_.cs" />
+    <Compile Include="Utilities\Extensions.Infrastructure\IExtensionPoint.cs" />
+    <Compile Include="Utilities\Extensions.Infrastructure\IExtensionPoint_out T_.cs" />
+    <Compile Include="Utilities\Extensions.ObjectExt\ObjectExtensions.cs" />
+    <Compile Include="Utilities\Extensions.QueryableExt\QueryableExtensions.cs" />
+    <Compile Include="Utilities\Extensions.RangeExt\RangeExtensions.cs" />
+    <Compile Include="Utilities\Extensions.StringExt\StringExtensions.cs" />
+    <Compile Include="Utilities\Extensions.StringExt\TryParseDelegate_T_.cs" />
+    <Compile Include="Utilities\Extensions.TimeExt\TimeExtensions.cs" />
+    <Compile Include="Utilities\Extensions.TypeExt\TypeExtensions.cs" />
+    <Compile Include="Utilities\FormattablePercentage_TNumeric_.cs" />
+    <Compile Include="Utilities\Guard.cs" />
+    <Compile Include="Utilities\IBound_T_.cs" />
+    <Compile Include="Utilities\ICloneable_out T_.cs" />
+    <Compile Include="Utilities\IDeepCloneable_out T_.cs" />
+    <Compile Include="Utilities\IEnumerated.cs" />
+    <Compile Include="Utilities\IInitializable.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3, in T4, in T5, in T6, in T7, in T8_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3, in T4, in T5, in T6, in T7_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3, in T4, in T5, in T6_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3, in T4, in T5_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3, in T4_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2, in T3_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1, in T2_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0, in T1_.cs" />
+    <Compile Include="Utilities\IInitializable_in T0_.cs" />
+    <Compile Include="Utilities\IMapper_in TFrom, TTo_.cs" />
+    <Compile Include="Utilities\InvalidDomainException_T_.cs" />
+    <Compile Include="Utilities\IShallowCloneable_out T_.cs" />
+    <Compile Include="Utilities\IStorage.cs" />
+    <Compile Include="Utilities\Open_T_.cs" />
+    <Compile Include="Utilities\Option.cs" />
+    <Compile Include="Utilities\Option_T_.cs" />
+    <Compile Include="Utilities\Pair_T_.cs" />
+    <Compile Include="Utilities\Patterns\ChainOfResponsibility.cs" />
+    <Compile Include="Utilities\Patterns\ChainOfResponsibilityLink_T, TResult_.cs" />
+    <Compile Include="Utilities\Patterns\ChainOfResponsibilityLink_T_.cs" />
+    <Compile Include="Utilities\Patterns\ExpressionSpecification.cs" />
+    <Compile Include="Utilities\Patterns\ExpressionSpecification_T_.cs" />
+    <Compile Include="Utilities\Patterns\GenericCommand_TReceiver, TInput, TReturn_.cs" />
+    <Compile Include="Utilities\Patterns\GenericCommand_TReceiver, TReturn_.cs" />
+    <Compile Include="Utilities\Patterns\GenericCommand_TReceiver_.cs" />
+    <Compile Include="Utilities\Patterns\GenericVisitor_TBase_.cs" />
+    <Compile Include="Utilities\Patterns\IChainOfResponsibilityLink_in T, out TResult_.cs" />
+    <Compile Include="Utilities\Patterns\IChainOfResponsibilityLink_in T_.cs" />
+    <Compile Include="Utilities\Patterns\ICommand.cs" />
+    <Compile Include="Utilities\Patterns\ICommand_in TInput, out TReturn_.cs" />
+    <Compile Include="Utilities\Patterns\ICommand_out TReturn_.cs" />
+    <Compile Include="Utilities\Patterns\IIdentifiable_out K_.cs" />
+    <Compile Include="Utilities\Patterns\InMemoryRepository_T, K_.cs" />
+    <Compile Include="Utilities\Patterns\IOperation_T_.cs" />
+    <Compile Include="Utilities\Patterns\IRepository_T, in K_.cs" />
+    <Compile Include="Utilities\Patterns\ISpecification_T_.cs" />
+    <Compile Include="Utilities\Patterns\Pipeline_T_.cs" />
+    <Compile Include="Utilities\Patterns\PredicateSpecification.cs" />
+    <Compile Include="Utilities\Patterns\PredicateSpecification_T_.cs" />
+    <Compile Include="Utilities\Patterns\ResponsibleLink_T, TResult_.cs" />
+    <Compile Include="Utilities\Patterns\ResponsibleLink_T_.cs" />
+    <Compile Include="Utilities\Patterns\Specification_T_.cs" />
+    <Compile Include="Utilities\Percentage.cs" />
+    <Compile Include="Utilities\PercentageBuilder.cs" />
+    <Compile Include="Utilities\Period.cs" />
+    <Compile Include="Utilities\Quartet_T_.cs" />
+    <Compile Include="Utilities\Quintet_T_.cs" />
+    <Compile Include="Utilities\Range.cs" />
+    <Compile Include="Utilities\Range_T_.cs" />
+    <Compile Include="Utilities\Reflection\Name.cs" />
+    <Compile Include="Utilities\Reflection\Value.cs" />
+    <Compile Include="Utilities\Resources\Exceptions.Designer.cs" />
+    <Compile Include="Utilities\Security\Base64.cs" />
+    <Compile Include="Utilities\Security\BCrypt.cs" />
+    <Compile Include="Utilities\Security\BCryptHasher.cs" />
+    <Compile Include="Utilities\Security\Charsets.cs" />
+    <Compile Include="Utilities\Security\Credential.cs" />
+    <Compile Include="Utilities\Security\CurrentIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\CurrentThreadSecurityProvider.cs" />
+    <Compile Include="Utilities\Security\HttpContextPrincipalProvider.cs" />
+    <Compile Include="Utilities\Security\HttpContextSecurityProvider.cs" />
+    <Compile Include="Utilities\Security\HttpIdentityReseter.cs" />
+    <Compile Include="Utilities\Security\HttpRequestIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\IIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\IIdentityReseter.cs" />
+    <Compile Include="Utilities\Security\Impersonate.cs" />
+    <Compile Include="Utilities\Security\IPasswordGenerator.cs" />
+    <Compile Include="Utilities\Security\IPasswordHasher.cs" />
+    <Compile Include="Utilities\Security\IPrincipalProvider.cs" />
+    <Compile Include="Utilities\Security\IWindowsIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\LogonUserIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\ProtocolTransitioningIdentityProvider.cs" />
+    <Compile Include="Utilities\Security\SimplePasswordGenerator.cs" />
+    <Compile Include="Utilities\Security\SimplePasswordHasher.cs" />
+    <Compile Include="Utilities\Security\ThreadIdentityReseter.cs" />
+    <Compile Include="Utilities\Security\WindowsIdentityProviderBase.cs" />
+    <Compile Include="Utilities\Storage.cs" />
+    <Compile Include="Utilities\Testing\TimeReseter.cs" />
+    <Compile Include="Utilities\Time.cs" />
+    <Compile Include="Utilities\Triplet_T_.cs" />
+    <Compile Include="Utilities\UniqueIdentifier.cs" />
+    <Compile Include="Utilities\Web\CompactGuid.cs" />
+    <Compile Include="Utilities\Web\DnsPort.cs" />
+    <Compile Include="Utilities\Web\EchoPort.cs" />
+    <Compile Include="Utilities\Web\FtpPort.cs" />
+    <Compile Include="Utilities\Web\Html.cs" />
+    <Compile Include="Utilities\Web\HttpPort.cs" />
+    <Compile Include="Utilities\Web\HttpsPort.cs" />
+    <Compile Include="Utilities\Web\ImapPort.cs" />
+    <Compile Include="Utilities\Web\LdapPort.cs" />
+    <Compile Include="Utilities\Web\MapNode.cs" />
+    <Compile Include="Utilities\Web\Pop3Port.cs" />
+    <Compile Include="Utilities\Web\QueryStringHelper.cs" />
+    <Compile Include="Utilities\Web\SiteMapBuilder.cs" />
+    <Compile Include="Utilities\Web\SmtpPort.cs" />
+    <Compile Include="Utilities\Web\SshPort.cs" />
+    <Compile Include="Utilities\Web\TcpPort.cs" />
+    <Compile Include="Utilities\Web\TelnetPort.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utilities\Resources\Exceptions.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
